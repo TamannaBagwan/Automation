@@ -1,0 +1,13 @@
+﻿{
+  "Name": "botsDNA-Notary - Google Chrome",
+  "Type": "Screen",
+  "Id": "Ur1doflJgU-AKM8D_jdvrA",
+  "Reference": "y6gQZK-dZ0C_LNi2fru-FA/Ur1doflJgU-AKM8D_jdvrA",
+  "ParentRef": "y6gQZK-dZ0C_LNi2fru-FA/dKOthQXPr0uV9ptK6XZpPg",
+  "Created": "2025-05-14T06:01:44.9679006Z",
+  "Updated": "2025-05-14T06:01:44.9679006Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,135 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Table_Extraction_From_Flipkart" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Table_Extraction_From_Flipkart_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Table_Extraction_From_Flipkart" sap:VirtualizedContainerService.HintSize="1413.2640000000001,746.4960000000001" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Watches - Affordable Watches Online at Best Prices for Men| Flipkart.com" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="509.184,723.456" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="a2279ddc-a0bf-4e11-a0a7-dd293f6e8008" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.39200000000005,481.536" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="str_WatchTitle" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='New column 1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416.25600000000003,192" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="a2279ddc-a0bf-4e11-a0a7-dd293f6e8008" Version="V4">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.flipkart.com/watches/pr?sid=r18&amp;p%5B%5D=facets.brand%255B%255D%3DGUESS&amp;p%5B%5D=facets.brand%255B%255D%3DMathey-Tissot&amp;p%5B%5D=facets.brand%255B%255D%3DEMPORIO%2BARMANI&amp;p%5B%5D=facets.brand%255B%255D%3DDUCATI%2BCORSE&amp;p%5B%5D=facets.brand%255B%255D%3DSwiss%2BMilitary%2BHanowa&amp;p%5B%5D=facets.brand%255B%255D%3DDANIEL%2BKLEIN&amp;p%5B%5D=facets.brand%255B%255D%3DEarnshaw&amp;p%5B%5D=facets.brand%255B%255D%3DMVMT&amp;p%5B%5D=facets.brand%255B%255D%3DSeiko&amp;p%5B%5D=facets.brand%255B%255D%3DCITIZEN&amp;p%5B%5D=facets.brand%255B%255D%3DBeverly%2BHills%2BPolo%2BClub&amp;p%5B%5D=facets.brand%255B%255D%3DJust%2BCavalli&amp;p%5B%5D=facets.brand%255B%255D%3DINVICTA&amp;p%5B%5D=facets.brand%255B%255D%3DKenneth%2BCole%2BReaction&amp;p%5B%5D=facets.brand%255B%255D%3DMICHAEL%2BKORS&amp;p%5B%5D=facets.brand%255B%255D%3DD1%2BMILANO&amp;p%5B%5D=facets.brand%255B%255D%3DCASIO&amp;p%5B%5D=facets.brand%255B%255D%3DPOLICE&amp;p%5B%5D=facets.brand%255B%255D%3DDIESEL&amp;p%5B%5D=facets.brand%255B%255D%3DTitan&amp;p%5B%5D=facets.brand%255B%255D%3DA%252FX%2BARMANI%2BEXCHANGE&amp;p%5B%5D=facets.brand%255B%255D%3DTOMMY%2BHILFIGER&amp;p%5B%5D=facets.brand%255B%255D%3DFossil&amp;p%5B%5D=facets.discount_range_v1%255B%255D%3D50%2525%2Bor%2Bmore&amp;hpid=TWc-bYLnuENX7alby-g9Mqp7_Hsxr70nj65vMAAFKlc%3D&amp;ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJNaW4uIDUwJSBPZmYiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJXQVRGQVVHUzVWSFhHUU1QIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiVGl0YW4sIFRvbW15IGhpbGZpZ2VyICYgbW9yZSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D" DesignTimeRectangle="9, -71, 1901, 8990" DesignTimeScaleFactor="1.3020833730697632" FullSelectorArgument="&lt;webctrl parentid='container' tag='DIV' /&gt;" Guid="fe040cce-5880-4261-bce6-e2d7e76e8adc" InformativeScreenshot="1a4bd200417a80dff9228761ae9e2498.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Watches - Affordable Watches Online at Best Prices for Men| Flipkart.com' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:OutputDataTable DataTable="[ExtractDataTable]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="416.25600000000003,114.432" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[str_WatchTitle]" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416.25600000000003,112.128" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[str_WatchTitle]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1037" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPESURBVFhHxZZvbBNlHMd/bUhY/POGTAwhArFK1JnI3mlIZPGNGOGVJow3osY3vpHwQpShhmmISsJYhAQjIYQEI+HFYiLiFFc3Z2UbFEbXzY1mbRnt1tt2a8vR3tr17mt+V47cnrt6ZR3xkk96+f15vt/nueeeK9HdC1lqhkRnEKfAA0WiM7pCO0zdexcylDEIemClMPAIpN7Vi2LVYPRcJlscOUozoj4VpDo50re+3GRh+Bcffmx/Aeqlh2y5SswGVhk9Mf8TtlxkYAOKcyvlReLR4Pr3hvxPFQZ/2wgEaBELvXVIda2xxd1Idq0xesU4a7AWaxrisWvrzo786YMJAjT5ILFqsTahQPg/cTVQur4bKLTb4m7o6k93e+05K64GkD4KXfvDHndB1+LQlRZbXMTVgD7/BqCnoeUft+UqUZpvBKCVfx3yVlwNMKViCIXccVu8EkX1NLRivy3uRFUGcnNbjVVQs+3Q815b3kSfJ+QzBwHkyz0ONSJVGWDkxDbjufJqKPI+5ORGLGRXGOTkBigzu7Gg9kPXUkgndtr6K1G1AUaeeBLpyc8NE/yMeaZlNGjFEWSlNkjR542VMHv4XsnWz2TSvnHGmrtvA8zCnRVIJ+oxNeZDcnSzAd9zjHOm6NDoy9EPvjsy5fu4C/RhP2jvFYOdR89O1GTADZ7tO98clz0fXYVnf9iRbHZjyKxfVgMsvrm1oyAKigQjb/rNHuJdvRzwZtxx+FRWFDNZ++lV/dnWAbx+5NeZOblh0OwjKITl4EJPc5RaQjbhV9suTs6mNoXEehP+I4Ja4dk3fdExL4pvOBBUS+mHk2K9FcKcF7WSuPFc0mnTner87C+xVoQgE2rlvH/XDVGcSUZf7BNrRZbFwP6TBydFcaaYeuymWCtCmPHAjVKKSrlbq6cTow3RWLgxIuL06tW3BHUzz32QPJo4LvOfBjI3n4nz8u47fWz8ta9/vs2DGs/agnHCOex+jpmnHzM2/MolcXxXAyb69MoML+eJ8wf+EYWqZXR4a684btnAtBdu6FKdotx6OtJ3uTkkDlwtxn5wGJuQItxD8mj8rHnp4yNbhljwQs/7gzzz1h+ORd/99tzU9rZOuemQ/7YJn3CiGPPSlz0K5/nk6w68/fciHQuEJKEWnI7fRz8JaUhSXqx1gjDhwVIpxQn8uRUNbDvcGRNrK0GIerBU5OtrZ51OwK++b+sTaytBGPOqGPNiKVz7vWnc6RXsvrirW6ytgEp6mPboYVL1MOF+6Tj3Vow/sSKpgU1XxFoHWHPPvxjZIw+Qmm2TAAAAAElFTkSuQmCC" InformativeScreenshot="09c9193e056abb7e17cbcd6ca71b5499.jpg" Selector="&lt;html app='chrome.exe' title='Watches - Affordable Watches Online at Best Prices for Men| Flipkart.com' /&gt;" Url="https://www.flipkart.com/watches/pr?sid=r18&amp;p%5B%5D=facets.brand%255B%255D%3DGUESS&amp;p%5B%5D=facets.brand%255B%255D%3DMathey-Tissot&amp;p%5B%5D=facets.brand%255B%255D%3DEMPORIO%2BARMANI&amp;p%5B%5D=facets.brand%255B%255D%3DDUCATI%2BCORSE&amp;p%5B%5D=facets.brand%255B%255D%3DSwiss%2BMilitary%2BHanowa&amp;p%5B%5D=facets.brand%255B%255D%3DDANIEL%2BKLEIN&amp;p%5B%5D=facets.brand%255B%255D%3DEarnshaw&amp;p%5B%5D=facets.brand%255B%255D%3DMVMT&amp;p%5B%5D=facets.brand%255B%255D%3DSeiko&amp;p%5B%5D=facets.brand%255B%255D%3DCITIZEN&amp;p%5B%5D=facets.brand%255B%255D%3DBeverly%2BHills%2BPolo%2BClub&amp;p%5B%5D=facets.brand%255B%255D%3DJust%2BCavalli&amp;p%5B%5D=facets.brand%255B%255D%3DINVICTA&amp;p%5B%5D=facets.brand%255B%255D%3DKenneth%2BCole%2BReaction&amp;p%5B%5D=facets.brand%255B%255D%3DMICHAEL%2BKORS&amp;p%5B%5D=facets.brand%255B%255D%3DD1%2BMILANO&amp;p%5B%5D=facets.brand%255B%255D%3DCASIO&amp;p%5B%5D=facets.brand%255B%255D%3DPOLICE&amp;p%5B%5D=facets.brand%255B%255D%3DDIESEL&amp;p%5B%5D=facets.brand%255B%255D%3DTitan&amp;p%5B%5D=facets.brand%255B%255D%3DA%252FX%2BARMANI%2BEXCHANGE&amp;p%5B%5D=facets.brand%255B%255D%3DTOMMY%2BHILFIGER&amp;p%5B%5D=facets.brand%255B%255D%3DFossil&amp;p%5B%5D=facets.discount_range_v1%255B%255D%3D50%2525%2Bor%2Bmore&amp;hpid=TWc-bYLnuENX7alby-g9Mqp7_Hsxr70nj65vMAAFKlc%3D&amp;ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InZhbHVlQ2FsbG91dCI6eyJtdWx0aVZhbHVlZEF0dHJpYnV0ZSI6eyJrZXkiOiJ2YWx1ZUNhbGxvdXQiLCJpbmZlcmVuY2VUeXBlIjoiVkFMVUVfQ0FMTE9VVCIsInZhbHVlcyI6WyJNaW4uIDUwJSBPZmYiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19LCJoZXJvUGlkIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6Imhlcm9QaWQiLCJpbmZlcmVuY2VUeXBlIjoiUElEIiwidmFsdWUiOiJXQVRGQVVHUzVWSFhHUU1QIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fSwidGl0bGUiOnsibXVsdGlWYWx1ZWRBdHRyaWJ1dGUiOnsia2V5IjoidGl0bGUiLCJpbmZlcmVuY2VUeXBlIjoiVElUTEUiLCJ2YWx1ZXMiOlsiVGl0YW4sIFRvbW15IGhpbGZpZ2VyICYgbW9yZSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
